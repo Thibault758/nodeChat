@@ -4,6 +4,8 @@ const PORT = 3000
 const server = require('http').createServer(app);
 const io = require('socket.io')(server) // Créer une instance de socket.io sur ce serveur
 
+const PORT = process.env.PORT || 9000
+
 //template motor
 app.set('view engine', 'pug');
 app.set('views', './public/views')
