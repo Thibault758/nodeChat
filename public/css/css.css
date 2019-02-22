@@ -1,0 +1,67 @@
+header{
+    background-color: black;
+    margin: 0;
+    color: white;
+    padding: 20px;
+}
+header h4 {
+    margin: 0;
+}
+
+.message-input {
+    width: 50%;
+    margin: 30px auto 10px auto;
+}
+
+.btn {
+    display: block;
+    width: 100px;
+    margin: auto
+}
+
+.new-message {
+    width: 50%;
+    min-height: 250px;
+    max-height: 250px;
+    margin: 20px auto;
+    background: #ee6e73;
+    border: 3px solid #26a699;
+    color: white;
+    overflow: hidden;
+}
+
+.new-message p {
+    margin: 10px 10px;
+}
+
+.blackFont {
+    color: black
+}
+
+.users {
+    background-color: #36afa3;
+    color: white;
+    width: 130px;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    top: 113px;
+}
+
+.userType {
+    margin: auto;
+    width: 50%;
+}
+
+.loginGoogle {
+    width: 200px;
+    margin-top: 50px;
+}
+
+.display-none{
+    display: none;
+}
+
+img {
+    width: 30px
+}

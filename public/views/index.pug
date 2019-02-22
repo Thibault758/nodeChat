@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")
+        link(rel="stylesheet" href="css/css.css")
+        script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
+        script(src="//www.gstatic.com/firebasejs/5.8.4/firebase-app.js")
+        script(src="//www.gstatic.com/firebasejs/5.8.4/firebase-auth.js")
+        script(src="/socket.io/socket.io.js")
+        script(src="/js/client.js")
+        script(src="/js/app.js")
+        title Document
+    
+    body     
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Chat room avec Socket.io</a>
+        </div>
+        <div class="nav-content">
+        <ul class="tabs tabs-transparent">
+            <li class="tab"><a href="#" data-room="general">General</a></li>
+            <li class="tab"><a href="#" data-room="gamming">Gamming</a></li>
+            <li class="tab"><a href="#" data-room="random">Random</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <a class="waves-effect waves-light btn loginGoogle display-none" href="#"> Login with google </a>  
+
+    <div class="chat-zone display-none">
+        <div class="users">
+            <p>Utilisateurs connectés:</p>
+            <div class="userName">
+            </div>
+        </div>
+
+        <div class="input-field col s6 message-input">
+            <input placeholder="Tapez votre message ici ..." id="message" type="text" class="validate">
+        </div>
+        <div class="userType">
+        </div>
+        <a class="waves-effect waves-light btn submit-btn">Envoyer</a>
+
+        <div class="new-message"><div>
+    </div>
+    
+
+        
