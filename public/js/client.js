@@ -45,6 +45,9 @@ class Client {
         this.socket.on('message:keydown', (nickname) => this.userTypeOnKeyboardAction(nickname));
         // changement de channel
         this.changeChannel();
+        // Quand un user tape au clavier
+        this.onKeyDown()
+
     }
 
     // A l'initialisation, reçoit du serveur la liste des channels et l'ID du channel dans lequel se trouve l'utilisateur
@@ -78,7 +81,7 @@ class Client {
 
     // notifie lorsqu'un utilisateur tape un message
     onKeyDown(){
-        $('#message').keydown( () => this.socket.emit('message:keydown', this.nickname))
+        $('#message').keydown(() => this.socket.emit('message:keydown', this.nickname))
     }
 
     // notifie lorsqu'un utilisateur arrete de taper un message
